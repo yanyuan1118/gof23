@@ -24,4 +24,8 @@ public abstract class Car {
     }
 
     public abstract void makeCar(String carType);
+
+
+    //总结: 结构型模式与建造型模式区别
+    //结构型模式是为了更好的组合我们的对象结构，建造型模式负责生产
 }
