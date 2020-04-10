@@ -34,5 +34,11 @@ public class Test {
         BottleCap newRedCap = CapFactory.getBottleCap("有奖红色", new UnShareCap());
         // redCap.getCode(different), redCap.getColor()
         log.info("红色瓶盖抽奖 : {}， {} ", newRedCap.getColor(), newRedCap.getCode(different));
+
+        newRedCap = CapFactory.getBottleCap("有奖红色", new UnShareCap());
+        different = String.valueOf(random.nextInt(9999) + 1000);
+        log.info("红色瓶盖抽奖 : {}， {} ", newRedCap.getColor(), newRedCap.getCode(different));
+
+
     }
 }
