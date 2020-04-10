@@ -26,6 +26,10 @@ public class Test {
 //        competitiveGameStore.remove(lol);
         gameStore.add(competitiveGameStore);
 
+        //整体-部分
+        //Game可以看成是整体（Game是抽象类）， GameStore也是整体， CS/LOL/Dota是部分（实现类是部分）
+        //Game是总体的父类，只有继承了Game的gameStore才拥有"整体"的这个属性
+
         //展示全部游戏
         log.info("展示全部游戏中。。。");
         gameStore.display();
