@@ -3,6 +3,9 @@ package com.yanyuan.gof.behavior.chain;
 /**
  * @Description Handler 抽象类
  * @Author yanyuan
+ *
+ * LeaveRequest是handler/process方法的处理对象
+ *
  * @Date 23:42 2020/4/10
  * @Version 1.0
  **/

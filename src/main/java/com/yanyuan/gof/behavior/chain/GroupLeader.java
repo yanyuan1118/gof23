@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * @Description ConcreteHandler实现类
  * 组长 批准1天及以下假期
+ * 职责链上的一个具体处理者
  * @Author yanyuan
  * @Date 23:51 2020/4/10
  * @Version 1.0
