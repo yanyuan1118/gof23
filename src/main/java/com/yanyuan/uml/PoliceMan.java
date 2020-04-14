@@ -8,6 +8,9 @@ package com.yanyuan.uml;
  **/
 public class PoliceMan extends Person implements ICareer {
 
+    /**
+     * 聚合关系
+     */
     private Uniform uniform;
 
     public PoliceMan(Uniform uniform) {
