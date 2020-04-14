@@ -1,7 +1,35 @@
-# gof23
+## gof23
+>《Design Patterns: Elements of Reusable Object-Oriented Software》（即后述《设计模式》一书），由 Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides 合著（Addison-Wesley，1995）。这几位作者常被称为"四人组（Gang of Four）"。
 
-#### 介绍
-设计模式
+### 模式介绍
+#### 一、创建型
+1. Factory Method（工厂方法）
+2. Abstract Factory（抽象工厂）
+3. Builder（建造者）
+4. Prototype（原型）
+5. Singleton（单例）
+
+#### 二、结构型
+6. Adapter Class/Object（适配器）
+7. Bridge（桥接）
+8. Composite（组合）
+9. Decorator（装饰）
+10. Facade（外观）
+11. Flyweight（享元）
+12. Proxy（代理）
+
+#### 三、行为型
+13. Interpreter（解释器）
+14. Template Method（模板方法）
+15. Chain of Responsibility（责任链）
+16. Command（命令）
+17. Iterator（迭代器）
+18. Mediator（中介者）
+19. Memento（备忘录）
+20. Observer（观察者）
+21. State（状态）
+22. Strategy（策略）
+23. Visitor（访问者）
 
 #### 软件架构
 软件架构说明
@@ -9,9 +37,9 @@
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### lombok
+>Lombok是一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具，通过使用对应的注解，可以在编译源码的时候生成对应的方法。官方地址：https://projectlombok.org/，github地址：https://github.com/rzwitserloot/lombok。
+
 
 #### 使用说明
 
