@@ -15,6 +15,7 @@ public class Test {
         String statement = "3 * 2 * 4 / 3 % 5 * 2 + 1 - 2";
         Calculator calculator = new Calculator();
         calculator.build(statement);
-        log.info("statement : {} ------> value = {}", statement, calculator.compute());
+        int result = calculator.compute();
+        log.info("statement : {} ------> value = {}", statement, result);
     }
 }
