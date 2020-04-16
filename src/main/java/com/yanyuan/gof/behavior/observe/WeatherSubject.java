@@ -25,9 +25,15 @@ public class WeatherSubject implements Subject {
 
     @Override
     public void removeObserve(Observe observe) {
+        log.info("移除观察者 {}", observe.name());
         observes.remove(observe);
     }
 
+
+    /**
+     * 方式一、直接将更新内容发送给观察者
+     * 方式二、通知消息观察者拉取数据（适用于数据量较大）
+     */
     @Override
     public void notifyAllObserve() {
         if(observes.isEmpty()){

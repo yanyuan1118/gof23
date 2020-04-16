@@ -1,6 +1,6 @@
 package com.yanyuan.gof.behavior.observe;
 
-import javax.xml.ws.WebEndpoint;
+import com.oracle.tools.packager.Log;
 
 /**
  * @Description 观察者测试类
@@ -11,13 +11,13 @@ import javax.xml.ws.WebEndpoint;
 public class Test {
     public static void main(String[] args) {
         WeatherSubject weatherSubject = new WeatherSubject();
-        Observe observe = new ConcreteObserve(weatherSubject);
+        Observe h5Observe = new H5ClientObserve(weatherSubject);
+        Observe appObserve = new AppClientObserve(weatherSubject);
 
         weatherSubject.setWeather(new Weather("2020-4-16 12:00",24, 50, 2));
-        weatherSubject.setWeather(new Weather("2020-4-16 14:00", 25, 40, 1));
         weatherSubject.setWeather(new Weather("2020-4-16 16:00",20, 70, 3));
 
-        weatherSubject.removeObserve(observe);
+        weatherSubject.removeObserve(h5Observe);
         weatherSubject.setWeather(new Weather("2020-4-16 18:00",15, 65, 1));
 
     }

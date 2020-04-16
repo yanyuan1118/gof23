@@ -8,6 +8,8 @@ package com.yanyuan.gof.behavior.observe;
  **/
 public interface Observe {
 
+    String name();
+
     /**
      * @param weather 天气
      */

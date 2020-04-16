@@ -9,20 +9,25 @@ import lombok.extern.slf4j.Slf4j;
  * @Version 1.0
  **/
 @Slf4j
-public class ConcreteObserve implements Observe {
+public class AppClientObserve implements Observe {
 
     private Subject weatherSubject;
 
     //注册观察者, 关联主题
-    public ConcreteObserve(Subject weatherSubject) {
+    public AppClientObserve(Subject weatherSubject) {
         this.weatherSubject = weatherSubject;
         this.weatherSubject.registerObserve(this);
     }
 
 
     @Override
+    public String name() {
+        return "App客户端";
+    }
+
+    @Override
     public void update(Weather weather) {
-        log.info("{} 最新天气：温度 {} ℃, 相对湿度 {} %, 风力 {} 级",
+        log.info("APP客户端：{} 最新天气：温度 {} ℃, 相对湿度 {} %, 风力 {} 级",
                 weather.getDate(), weather.getTemperature(), weather.getHumidity(), weather.getWindPower());
     }
 }
