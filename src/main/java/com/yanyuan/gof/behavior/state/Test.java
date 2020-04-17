@@ -12,19 +12,16 @@ import lombok.Setter;
 public class Test {
 
     public static void main(String[] args) {
-        Room[] rooms = new Room[]{new Room(), new Room()};
-        rooms[0].reservationRoom();
-        rooms[0].showCurrState();
+        Room room = new Room();
+        room.reservationRoom();
+        room.showCurrState();
 
-        rooms[0].checkinRoom();
-        rooms[0].showCurrState();
+        room.checkinRoom();
+        room.showCurrState();
 
-        rooms[0].checkoutRoom();
-        rooms[0].showCurrState();
+        room.checkoutRoom();
+        room.showCurrState();
 
-        rooms[1].reservationRoom();
-        rooms[1].showCurrState();
-        rooms[1].reservationRoom();
     }
 }
 
