@@ -7,15 +7,14 @@ package com.yanyuan.gof.build.singleton;
  * @Version 1.0
  **/
 public class LazySingleton {
-
-    private static LazySingleton lazySingleton;
-
+    private static volatile LazySingleton lazySingleton;
     private LazySingleton(){
     }
-
-    public synchronized static LazySingleton getInstance(){
+    public static LazySingleton getInstance(){
         if(lazySingleton == null){
-            lazySingleton = new LazySingleton();
+            synchronized(LazySingleton.class){
+                lazySingleton = new LazySingleton();
+            }
         }
         return lazySingleton;
     }
