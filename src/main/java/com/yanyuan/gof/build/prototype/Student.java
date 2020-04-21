@@ -1,6 +1,8 @@
 package com.yanyuan.gof.build.prototype;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.SneakyThrows;
 
 import java.io.*;
@@ -13,7 +15,8 @@ import java.util.List;
  * @Date 14:11 2020/4/7
  * @Version 1.0
  **/
-@Data
+@Getter
+@Setter
 public class Student implements Cloneable, Serializable {
     private String name;
     private Integer age;
@@ -45,5 +48,15 @@ public class Student implements Cloneable, Serializable {
         ObjectInputStream oi = new ObjectInputStream(bi);
         Student student = (Student) oi.readObject();
         return student;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", school=" + school +
+                ", friends=" + friends +
+                '}';
     }
 }
