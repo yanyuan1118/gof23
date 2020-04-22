@@ -12,8 +12,9 @@ import lombok.extern.slf4j.Slf4j;
 public class Test {
 
     public static void main(String[] args){
-        CarAdapterImpl carAdapter = new CarAdapterImpl();
-        Car car = carAdapter.createCar(CarAdapterImpl.BAND_AUDI);
+        CarFactory bmwCar = new CarFactoryImplBMW();
+        CarAdapterImpl carAdapter = new CarAdapterImpl(bmwCar);
+        Car car = carAdapter.createCar();
         log.info("before change color : {} ", car);
         carAdapter.changeColor(car, "红色");
         log.info("after change color : {} ", car);

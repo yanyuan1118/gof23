@@ -6,7 +6,7 @@ package com.yanyuan.gof.build.builder.v2;
  * @Date 23:11 2020/4/19
  * @Version 1.0
  **/
-public class Worker {
+public class Director {
     public Car buildCar(CarBuilder builder){
         builder.createEngine();
         builder.createFrame();
