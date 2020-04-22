@@ -13,11 +13,10 @@ public class Test {
 
     public static void main(String[] args){
         CarFactory bmwCar = new CarFactoryImplBMW();
-        CarAdapterImpl carAdapter = new CarAdapterImpl(bmwCar);
+        CarAdapter carAdapter = new CarAdapter(bmwCar);
         Car car = carAdapter.createCar();
-        log.info("before change color : {} ", car);
+        log.info("before change color : {} ", car);// Car(color=白色, band=宝马)
         carAdapter.changeColor(car, "红色");
-        log.info("after change color : {} ", car);
-
+        log.info("after change color : {} ", car);//Car(color=红色, band=宝马)
     }
 }
