@@ -25,8 +25,8 @@ public class Facade {
     }
 
     public void allDown(){
-        light.down();
-        air.down();
         tv.down();
+        air.down();
+        light.down();
     }
 }

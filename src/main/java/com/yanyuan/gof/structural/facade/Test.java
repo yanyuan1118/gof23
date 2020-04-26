@@ -10,7 +10,7 @@ public class Test {
 
     public static void main(String[] args){
         Facade facade = new Facade(new Light(), new Air(), new TV());
-        facade.allOpen();
-        facade.allDown();
+        facade.allOpen();//print: 开灯,打开空调，打开电视机
+        facade.allDown();//print: 关灯,关闭空调，关闭电视机
     }
 }
