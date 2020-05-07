@@ -39,6 +39,7 @@ public class Test {
         different = String.valueOf(random.nextInt(9999) + 1000);
         log.info("红色瓶盖抽奖 : {}， {} ", newRedCap.getColor(), newRedCap.getCode(different));
 
+        log.info("享元Map {}", CapFactory.shareMap.keySet());
 
     }
 }
