@@ -11,7 +11,7 @@ package com.yanyuan.gof.behavior.chain;
  **/
 public abstract class Leader {
 
-    private String position;//职业
+    private String position;//岗位
 
     Leader nextLeader;//下一节点审核人员
 

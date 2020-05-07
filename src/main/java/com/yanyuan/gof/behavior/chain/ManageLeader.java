@@ -20,12 +20,11 @@ public class ManageLeader extends Leader{
     @Override
     public void process(LeaveRequest leaveRequest) {
         if(leaveRequest.getDays() <= 3){
-            log.info("请假单：姓名{}, 请假天数: {} , 原因：{}",
+            log.info("经理批准: 同意。【请假单：姓名{}, 请假天数: {} , 原因：{} 】",
                     leaveRequest.getName(),
                     leaveRequest.getDays() ,
                     leaveRequest.getReason());
-            log.info("经理批准: 同意");
-        }else if(leaveRequest.getDays() > 3){
+        }else{
             if(nextLeader == null){
                 log.info("该请假单不能被批准：{} ", leaveRequest);
                 return;
