@@ -1,6 +1,5 @@
 package com.yanyuan.gof.behavior.observe;
 
-import com.oracle.tools.packager.Log;
 
 /**
  * @Description 观察者测试类
