@@ -17,8 +17,4 @@ public class MemberDiscount extends Discount{
         return originalPrice * discount;
     }
 
-    @Override
-    public String discountType() {
-        return "会员折扣";
-    }
 }

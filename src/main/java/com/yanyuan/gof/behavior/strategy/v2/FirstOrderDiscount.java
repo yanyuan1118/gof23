@@ -17,8 +17,4 @@ public class FirstOrderDiscount extends Discount{
         return originalPrice * discount;
     }
 
-    @Override
-    public String discountType() {
-        return "首次下单";
-    }
 }

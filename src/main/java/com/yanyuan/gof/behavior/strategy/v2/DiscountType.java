@@ -3,7 +3,7 @@ package com.yanyuan.gof.behavior.strategy.v2;
 /**
  * @author: yanyuan
  * @Date: 2020/7/8 08:41
- * @Description: 折扣类型美剧
+ * @Description: 折扣类型枚举
  */
 public enum DiscountType {
 

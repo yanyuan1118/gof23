@@ -9,7 +9,4 @@ package com.yanyuan.gof.behavior.strategy.v2;
 public abstract class Discount {
 
     abstract double discountPrice(Double originalPrice);
-
-    abstract String discountType();
-
 }

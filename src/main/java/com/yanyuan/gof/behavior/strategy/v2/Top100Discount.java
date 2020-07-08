@@ -17,8 +17,4 @@ public class Top100Discount extends Discount{
         return originalPrice * discount;
     }
 
-    @Override
-    public String discountType() {
-        return "前100名下单优惠";
-    }
 }
